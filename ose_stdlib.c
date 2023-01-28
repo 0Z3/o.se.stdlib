@@ -22,7 +22,7 @@
 */
 
 #include <string.h>
-#include "libose/ose_conf.h"
+#include "ose_conf.h"
 #include "libose/ose.h"
 #include "libose/ose_context.h"
 #include "libose/ose_util.h"
