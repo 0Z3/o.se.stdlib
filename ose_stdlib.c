@@ -21,16 +21,16 @@
   OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#include <stdio.h>
 #include <string.h>
-#include "ose.h"
-#include "ose_context.h"
-#include "ose_util.h"
-#include "ose_stackops.h"
-#include "ose_assert.h"
-#include "ose_vm.h"
-#include "osevm_lib.h"
-#include "ose_errno.h"
+#include "libose/ose_conf.h"
+#include "libose/ose.h"
+#include "libose/ose_context.h"
+#include "libose/ose_util.h"
+#include "libose/ose_stackops.h"
+#include "libose/ose_assert.h"
+#include "libose/ose_vm.h"
+#include "libose/osevm_lib.h"
+#include "libose/ose_errno.h"
 
 #define OSE_STDLIB_ADDR_ASSIGN "/_l/ASN"
 #define OSE_STDLIB_ADDR_ASSIGNSTACKTOENV "/_l/ASE"
@@ -405,12 +405,16 @@ const void *ose_stdlib_lookup_fn(ose_constbundle osevm,
     return NULL;
 }
 
+#ifdef OSE_LINK_MODULES
+void ose_stdlib_init(ose_bundle osevm)
+#else
 void ose_main(ose_bundle osevm)
+#endif
 {
     extern struct osevm_hooks osevm_hooks;
     ose_bundle vm_l;
     ose_pushContextMessage(osevm,
-                           65536,
+                           8192,
                            OSEVM_ADDR_STDLIB);
     vm_l = ose_enter(osevm, OSEVM_ADDR_STDLIB);
 
