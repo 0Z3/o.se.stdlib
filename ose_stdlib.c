@@ -1215,141 +1215,141 @@ void ose_main(ose_bundle osevm)
                     OSETT_ALIGNEDPTR,
                     ose_stdlib_tuck);
 
-    if(osevm_hooks.MOVEELEMTOREGISTER)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_MOVEELEMTOREGISTER,
-                        strlen(OSEVM_ADDR_MOVEELEMTOREGISTER),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.MOVEELEMTOREGISTER);
-    }
-    if(osevm_hooks.TOTYPE)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_TOTYPE,
-                        strlen(OSEVM_ADDR_TOTYPE),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.TOTYPE);
-    }
-    if(osevm_hooks.TOBLOB)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_TOBLOB,
-                        strlen(OSEVM_ADDR_TOBLOB),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.TOBLOB);
-    }
-    if(osevm_hooks.TOFLOAT)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_TOFLOAT,
-                        strlen(OSEVM_ADDR_TOFLOAT),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.TOFLOAT);
-    }
-    if(osevm_hooks.TOINT32)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_TOINT32,
-                        strlen(OSEVM_ADDR_TOINT32),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.TOINT32);
-    }
-    if(osevm_hooks.TOSTRING)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_TOSTRING,
-                        strlen(OSEVM_ADDR_TOSTRING),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.TOSTRING);
-    }
-    if(osevm_hooks.FUNCALL)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_FUNCALL,
-                        strlen(OSEVM_ADDR_FUNCALL),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.FUNCALL);
-    }
-    if(osevm_hooks.QUOTE)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_QUOTE,
-                        strlen(OSEVM_ADDR_QUOTE),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.QUOTE);
-    }
-    if(osevm_hooks.ASSIGN)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_ASSIGN,
-                        strlen(OSEVM_ADDR_ASSIGN),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.ASSIGN);
-    }
-    if(osevm_hooks.APPENDBYTE)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_APPENDBYTE,
-                        strlen(OSEVM_ADDR_APPENDBYTE),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.APPENDBYTE);
-    }
-    if(osevm_hooks.REPLACEREGISTERWITHELEM)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_REPLACEREGISTERWITHELEM,
-                        strlen(OSEVM_ADDR_REPLACEREGISTERWITHELEM),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.REPLACEREGISTERWITHELEM);
-    }
-    if(osevm_hooks.APPENDELEMTOREGISTER)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_APPENDELEMTOREGISTER,
-                        strlen(OSEVM_ADDR_APPENDELEMTOREGISTER),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.APPENDELEMTOREGISTER);
-    }
-    if(osevm_hooks.COPYREGISTERTOELEM)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_COPYREGISTERTOELEM,
-                        strlen(OSEVM_ADDR_COPYREGISTERTOELEM),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.COPYREGISTERTOELEM);
-    }
-    if(osevm_hooks.LOOKUP)
-    {
-        ose_pushMessage(vm_l,
-                        OSEVM_ADDR_LOOKUP,
-                        strlen(OSEVM_ADDR_LOOKUP),
-                        1,
-                        OSETT_ALIGNEDPTR,
-                        osevm_hooks.LOOKUP);
-    }
+/*     if(osevm_hooks.MOVEELEMTOREGISTER) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_MOVEELEMTOREGISTER, */
+/*                         strlen(OSEVM_ADDR_MOVEELEMTOREGISTER), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.MOVEELEMTOREGISTER); */
+/*     } */
+/*     if(osevm_hooks.TOTYPE) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_TOTYPE, */
+/*                         strlen(OSEVM_ADDR_TOTYPE), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.TOTYPE); */
+/*     } */
+/*     if(osevm_hooks.TOBLOB) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_TOBLOB, */
+/*                         strlen(OSEVM_ADDR_TOBLOB), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.TOBLOB); */
+/*     } */
+/*     if(osevm_hooks.TOFLOAT) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_TOFLOAT, */
+/*                         strlen(OSEVM_ADDR_TOFLOAT), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.TOFLOAT); */
+/*     } */
+/*     if(osevm_hooks.TOINT32) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_TOINT32, */
+/*                         strlen(OSEVM_ADDR_TOINT32), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.TOINT32); */
+/*     } */
+/*     if(osevm_hooks.TOSTRING) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_TOSTRING, */
+/*                         strlen(OSEVM_ADDR_TOSTRING), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.TOSTRING); */
+/*     } */
+/*     if(osevm_hooks.FUNCALL) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_FUNCALL, */
+/*                         strlen(OSEVM_ADDR_FUNCALL), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.FUNCALL); */
+/*     } */
+/*     if(osevm_hooks.QUOTE) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_QUOTE, */
+/*                         strlen(OSEVM_ADDR_QUOTE), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.QUOTE); */
+/*     } */
+/*     if(osevm_hooks.ASSIGN) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_ASSIGN, */
+/*                         strlen(OSEVM_ADDR_ASSIGN), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.ASSIGN); */
+/*     } */
+/*     if(osevm_hooks.APPENDBYTE) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_APPENDBYTE, */
+/*                         strlen(OSEVM_ADDR_APPENDBYTE), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.APPENDBYTE); */
+/*     } */
+/*     if(osevm_hooks.REPLACEREGISTERWITHELEM) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_REPLACEREGISTERWITHELEM, */
+/*                         strlen(OSEVM_ADDR_REPLACEREGISTERWITHELEM), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.REPLACEREGISTERWITHELEM); */
+/*     } */
+/*     if(osevm_hooks.APPENDELEMTOREGISTER) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_APPENDELEMTOREGISTER, */
+/*                         strlen(OSEVM_ADDR_APPENDELEMTOREGISTER), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.APPENDELEMTOREGISTER); */
+/*     } */
+/*     if(osevm_hooks.COPYREGISTERTOELEM) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_COPYREGISTERTOELEM, */
+/*                         strlen(OSEVM_ADDR_COPYREGISTERTOELEM), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.COPYREGISTERTOELEM); */
+/*     } */
+/*     if(osevm_hooks.LOOKUP) */
+/*     { */
+/*         ose_pushMessage(vm_l, */
+/*                         OSEVM_ADDR_LOOKUP, */
+/*                         strlen(OSEVM_ADDR_LOOKUP), */
+/*                         1, */
+/*                         OSETT_ALIGNEDPTR, */
+/*                         osevm_hooks.LOOKUP); */
+/*     } */
 #ifdef OSE_PROVIDE_TYPE_SYMBOL
 #define OSEVM_ADDR_TOSYMBOL "/_l/P,S"
 #define OSE_STDLIB_ADDR_TOSYMBOL "/_l/2SY"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOSYMBOL,
-                    strlen(OSEVM_ADDR_TOSYMBOL),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOSYMBOL);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOSYMBOL, */
+/*                     strlen(OSEVM_ADDR_TOSYMBOL), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOSYMBOL); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOSYMBOL,
                     strlen(OSE_STDLIB_ADDR_TOSYMBOL),
@@ -1360,12 +1360,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_DOUBLE
 #define OSEVM_ADDR_TODOUBLE "/_l/P,d"
 #define OSE_STDLIB_ADDR_TODOUBLE "/_l/2DL"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TODOUBLE,
-                    strlen(OSEVM_ADDR_TODOUBLE),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TODOUBLE);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TODOUBLE, */
+/*                     strlen(OSEVM_ADDR_TODOUBLE), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TODOUBLE); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TODOUBLE,
                     strlen(OSE_STDLIB_ADDR_TODOUBLE),
@@ -1376,12 +1376,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_INT8
 #define OSEVM_ADDR_TOINT8 "/_l/P,c"
 #define OSE_STDLIB_ADDR_TOINT8 "/_l/2I1"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOINT8,
-                    strlen(OSEVM_ADDR_TOINT8),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOINT8);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOINT8, */
+/*                     strlen(OSEVM_ADDR_TOINT8), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOINT8); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOINT8,
                     strlen(OSE_STDLIB_ADDR_TOINT8),
@@ -1392,12 +1392,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_UINT8
 #define OSEVM_ADDR_TOUINT8 "/_l/P,C"
 #define OSE_STDLIB_ADDR_TOUINT8 "/_l/2U1"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOUINT8,
-                    strlen(OSEVM_ADDR_TOUINT8),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOUINT8);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOUINT8, */
+/*                     strlen(OSEVM_ADDR_TOUINT8), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOUINT8); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOUINT8,
                     strlen(OSE_STDLIB_ADDR_TOUINT8),
@@ -1408,12 +1408,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_INT16
 #define OSEVM_ADDR_TOINT16 "/_l/P,u"
 #define OSE_STDLIB_ADDR_TOINT16 "/_l/2I2"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOINT16,
-                    strlen(OSEVM_ADDR_TOINT16),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOINT16);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOINT16, */
+/*                     strlen(OSEVM_ADDR_TOINT16), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOINT16); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOINT16,
                     strlen(OSE_STDLIB_ADDR_TOINT16),
@@ -1424,12 +1424,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_UINT16
 #define OSEVM_ADDR_TOUINT16 "/_l/P,U"
 #define OSE_STDLIB_ADDR_TOUINT16 "/_l/2U2"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOUINT16,
-                    strlen(OSEVM_ADDR_TOUINT16),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOUINT16);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOUINT16, */
+/*                     strlen(OSEVM_ADDR_TOUINT16), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOUINT16); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOUINT16,
                     strlen(OSE_STDLIB_ADDR_TOUINT16),
@@ -1440,12 +1440,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_UINT32
 #define OSEVM_ADDR_TOUINT32 "/_l/P,k"
 #define OSE_STDLIB_ADDR_TOUINT32 "/_l/2U4"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOUINT32,
-                    strlen(OSEVM_ADDR_TOUINT32),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOUINT32);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOUINT32, */
+/*                     strlen(OSEVM_ADDR_TOUINT32), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOUINT32); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOUINT32,
                     strlen(OSE_STDLIB_ADDR_TOUINT32),
@@ -1456,12 +1456,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_INT64
 #define OSEVM_ADDR_TOINT64 "/_l/P,h"
 #define OSE_STDLIB_ADDR_TOINT64 "/_l/2I8"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOINT64,
-                    strlen(OSEVM_ADDR_TOINT64),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOINT64);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOINT64, */
+/*                     strlen(OSEVM_ADDR_TOINT64), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOINT64); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOINT64,
                     strlen(OSE_STDLIB_ADDR_TOINT64),
@@ -1472,12 +1472,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_UINT64
 #define OSEVM_ADDR_TOUINT64 "/_l/P,H"
 #define OSE_STDLIB_ADDR_TOUINT64 "/_l/2U8"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOUINT64,
-                    strlen(OSEVM_ADDR_TOUINT64),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOUINT64);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOUINT64, */
+/*                     strlen(OSEVM_ADDR_TOUINT64), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOUINT64); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOUINT64,
                     strlen(OSE_STDLIB_ADDR_TOUINT64),
@@ -1488,12 +1488,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_TIMETAG
 #define OSEVM_ADDR_TOTIMETAG "/_l/P,t"
 #define OSE_STDLIB_ADDR_TOTIMETAG "/_l/2TT"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOTIMETAG,
-                    strlen(OSEVM_ADDR_TOTIMETAG),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOTIMETAG);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOTIMETAG, */
+/*                     strlen(OSEVM_ADDR_TOTIMETAG), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOTIMETAG); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOTIMETAG,
                     strlen(OSE_STDLIB_ADDR_TOTIMETAG),
@@ -1504,12 +1504,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_TRUE
 #define OSEVM_ADDR_TOTRUE "/_l/P,T"
 #define OSE_STDLIB_ADDR_TOTRUE "/_l/2TR"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOTRUE,
-                    strlen(OSEVM_ADDR_TOTRUE),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOTRUE);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOTRUE, */
+/*                     strlen(OSEVM_ADDR_TOTRUE), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOTRUE); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOTRUE,
                     strlen(OSE_STDLIB_ADDR_TOTRUE),
@@ -1520,12 +1520,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_FALSE
 #define OSEVM_ADDR_TOFALSE "/_l/P,F"
 #define OSE_STDLIB_ADDR_TOFALSE "/_l/2FA"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOFALSE,
-                    strlen(OSEVM_ADDR_TOFALSE),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOFALSE);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOFALSE, */
+/*                     strlen(OSEVM_ADDR_TOFALSE), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOFALSE); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOFALSE,
                     strlen(OSE_STDLIB_ADDR_TOFALSE),
@@ -1536,12 +1536,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_NULL
 #define OSEVM_ADDR_TONULL "/_l/P,N"
 #define OSE_STDLIB_ADDR_TONULL "/_l/2NU"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TONULL,
-                    strlen(OSEVM_ADDR_TONULL),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TONULL);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TONULL, */
+/*                     strlen(OSEVM_ADDR_TONULL), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TONULL); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TONULL,
                     strlen(OSE_STDLIB_ADDR_TONULL),
@@ -1552,12 +1552,12 @@ void ose_main(ose_bundle osevm)
 #ifdef OSE_PROVIDE_TYPE_INFINITUM
 #define OSEVM_ADDR_TOINFINITUM "/_l/P,I"
 #define OSE_STDLIB_ADDR_TOINFINITUM "/_l/2IF"
-    ose_pushMessage(vm_l,
-                    OSEVM_ADDR_TOINFINITUM,
-                    strlen(OSEVM_ADDR_TOINFINITUM),
-                    1,
-                    OSETT_ALIGNEDPTR,
-                    osevm_hooks.TOINFINITUM);
+/*     ose_pushMessage(vm_l, */
+/*                     OSEVM_ADDR_TOINFINITUM, */
+/*                     strlen(OSEVM_ADDR_TOINFINITUM), */
+/*                     1, */
+/*                     OSETT_ALIGNEDPTR, */
+/*                     osevm_hooks.TOINFINITUM); */
     ose_pushMessage(vm_l,
                     OSE_STDLIB_ADDR_TOINFINITUM,
                     strlen(OSE_STDLIB_ADDR_TOINFINITUM),
